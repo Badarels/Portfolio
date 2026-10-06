@@ -43,14 +43,14 @@ export interface SkillCategory {
 })
 export class AppComponent {
   title = 'Alioune Badara Sock - Portfolio';
-  
+
   // Theme & Navigation state
   isDarkMode = signal<boolean>(true);
   currentLang = signal<'FR' | 'EN'>('FR');
   mobileMenuOpen = signal<boolean>(false);
   activeSkillTab = signal<string>('ALL');
   activeProjectTab = signal<string>('ALL');
-  
+
   // Selected Project Modal
   selectedProject = signal<Project | null>(null);
 
@@ -75,7 +75,7 @@ export class AppComponent {
     location: 'Dakar / Liberté 6 extension, Sénégal',
     github: 'https://github.com/Badarels',
     avatar: 'profile.png',
-    experienceYears: '4+',
+    experienceYears: '5+',
     status: 'Disponible pour opportunités & projets'
   };
 
@@ -337,7 +337,7 @@ export class AppComponent {
 
   submitContact() {
     if (!this.contactData.name || !this.contactData.email || !this.contactData.message) return;
-    
+
     this.formSending.set(true);
     setTimeout(() => {
       this.formSending.set(false);
