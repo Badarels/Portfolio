@@ -24,11 +24,13 @@
 
       <!-- Action Buttons -->
       <div class="nav-actions">
-        <button class="icon-btn" (click)="toggleTheme()" [title]="isDarkMode() ? 'Passer en Mode Clair' : 'Passer en Mode Sombre'">
+        <button class="icon-btn" (click)="toggleTheme()"
+          [title]="isDarkMode() ? 'Passer en Mode Clair' : 'Passer en Mode Sombre'">
           <i class="fa-solid" [class.fa-sun]="isDarkMode()" [class.fa-moon]="!isDarkMode()"></i>
         </button>
 
-        <a href="CV_Alioune_Badara_Sock.pdf" download="CV_Alioune_Badara_Sock.pdf" target="_blank" class="icon-btn print-hide" title="Télécharger le CV PDF">
+        <a href="CV_Alioune_Badara_Sock.pdf" download="CV_Alioune_Badara_Sock.pdf" target="_blank"
+          class="icon-btn print-hide" title="Télécharger le CV PDF">
           <i class="fa-solid fa-file-pdf"></i>
         </a>
 
@@ -92,7 +94,8 @@
             <span>Discuter d'un Projet</span>
             <i class="fa-solid fa-comments"></i>
           </a>
-          <a href="CV_Alioune_Badara_Sock.pdf" download="CV_Alioune_Badara_Sock.pdf" target="_blank" class="btn btn-outline">
+          <a href="CV_Alioune_Badara_Sock.pdf" download="CV_Alioune_Badara_Sock.pdf" target="_blank"
+            class="btn btn-outline">
             <i class="fa-solid fa-download"></i>
             <span>Télécharger CV</span>
           </a>
@@ -151,7 +154,7 @@
       <div class="metric-card glass-card">
         <div class="metric-icon"><i class="fa-solid fa-code-commit"></i></div>
         <div class="metric-data">
-          <h3>4+ Ans</h3>
+          <h3>5+ Ans</h3>
           <p>D'expérience en Génie Logiciel</p>
         </div>
       </div>
@@ -183,20 +186,26 @@
   <section class="section about-section" id="about">
     <div class="container">
       <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> À Propos De Moi</span>
-      <h2 class="section-title">Ingénieur Logiciel orienté <span class="gradient-text">Résultats & Performance</span></h2>
+      <h2 class="section-title">Ingénieur Logiciel orienté <span class="gradient-text">Résultats & Performance</span>
+      </h2>
 
       <div class="about-grid">
         <div class="about-bio glass-card">
           <p class="lead-text">
-            Passionné par la conception de systèmes informatiques d'envergure, je suis <strong>Ingénieur Logiciel Full Stack</strong> diplômé d'un <strong>Master en Génie Logiciel de l'ISI Dakar</strong>.
+            Passionné par la conception de systèmes informatiques d'envergure, je suis <strong>Ingénieur Logiciel Full
+              Stack</strong> diplômé d'un <strong>Master en Génie Logiciel de l'ISI Dakar</strong>.
           </p>
           <p>
-            Fort de plus de 4 années d'expérience professionnelle en entreprise et en freelance, je me suis spécialisé dans le développement d'<strong>applications métiers stratégiques</strong>, de plateformes de gestion médicale temps réel, de CRM d'entreprise et d'architectures bancaires.
+            Fort de plus de 7 années d'expérience professionnelle en entreprise et en freelance, je me suis spécialisé
+            dans le développement d'<strong>applications métiers stratégiques</strong>, de plateformes de gestion
+            médicale temps réel, de CRM d'entreprise et d'architectures bancaires.
           </p>
           <p>
-            Mon expertise repose sur une maîtrise approfondie du back-end <strong>Java / Spring Boot (Microservices, Security JWT)</strong> et du front-end <strong>Angular (Formulaires réactifs, consommation d'API REST)</strong>, combinée à une rigueur DevOps (Docker, CI/CD, Git).
+            Mon expertise repose sur une maîtrise approfondie du back-end <strong>Java / Spring Boot (Microservices,
+              Security JWT)</strong> et du front-end <strong>Angular (Formulaires réactifs, consommation d'API
+              REST)</strong>, combinée à une rigueur DevOps (Docker, CI/CD, Git).
           </p>
-          
+
           <div class="about-highlights">
             <div class="highlight-item">
               <i class="fa-solid fa-check-circle"></i>
@@ -263,7 +272,8 @@
       <div class="text-center">
         <span class="section-tag"><i class="fa-solid fa-code"></i> Stack & Compétences</span>
         <h2 class="section-title">Compétences Techniques & <span class="gradient-text">Savoir-Faire</span></h2>
-        <p class="section-subtitle">Une panoplie d'outils et de technologies modernes pour construire des applications scalables du front-end au back-end.</p>
+        <p class="section-subtitle">Une panoplie d'outils et de technologies modernes pour construire des applications
+          scalables du front-end au back-end.</p>
       </div>
 
       <div class="skills-grid">
@@ -294,7 +304,8 @@
     <div class="container">
       <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Parcours Professionnel</span>
       <h2 class="section-title">Expériences <span class="gradient-text">Professionnelles</span></h2>
-      <p class="section-subtitle">Un historique éprouvé dans le développement de projets stratégiques pour des entreprises et clients institutionnels.</p>
+      <p class="section-subtitle">Un historique éprouvé dans le développement de projets stratégiques pour des
+        entreprises et clients institutionnels.</p>
 
       <div class="timeline">
         <div class="timeline-item" *ngFor="let exp of experiences" [class.current]="exp.isCurrent">
@@ -340,13 +351,17 @@
       <div class="text-center">
         <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Portfolio & Projets</span>
         <h2 class="section-title">Réalisations <span class="gradient-text">Récentes</span></h2>
-        <p class="section-subtitle">Aperçu de mes projets clés en architectures Spring Boot Microservices, Laravel et Angular.</p>
+        <p class="section-subtitle">Aperçu de mes projets clés en architectures Spring Boot Microservices, Laravel et
+          Angular.</p>
 
         <!-- Project Category Filters -->
         <div class="filter-tabs">
-          <button class="filter-btn" [class.active]="activeProjectTab() === 'ALL'" (click)="activeProjectTab.set('ALL')">Tous</button>
-          <button class="filter-btn" [class.active]="activeProjectTab() === 'FULLSTACK'" (click)="activeProjectTab.set('FULLSTACK')">Full Stack</button>
-          <button class="filter-btn" [class.active]="activeProjectTab() === 'BACKEND'" (click)="activeProjectTab.set('BACKEND')">Back-End / Desktop</button>
+          <button class="filter-btn" [class.active]="activeProjectTab() === 'ALL'"
+            (click)="activeProjectTab.set('ALL')">Tous</button>
+          <button class="filter-btn" [class.active]="activeProjectTab() === 'FULLSTACK'"
+            (click)="activeProjectTab.set('FULLSTACK')">Full Stack</button>
+          <button class="filter-btn" [class.active]="activeProjectTab() === 'BACKEND'"
+            (click)="activeProjectTab.set('BACKEND')">Back-End / Desktop</button>
         </div>
       </div>
 
@@ -428,7 +443,8 @@
       <div class="text-center">
         <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Restons En Contact</span>
         <h2 class="section-title">Démarrons un <span class="gradient-text">Nouveau Projet</span></h2>
-        <p class="section-subtitle">Vous avez un projet d'application métier, une architecture Spring Boot à concevoir ou besoin d'un expert Angular 19 ? Contactez-moi directement.</p>
+        <p class="section-subtitle">Vous avez un projet d'application métier, une architecture Spring Boot à concevoir
+          ou besoin d'un expert Angular 19 ? Contactez-moi directement.</p>
       </div>
 
       <div class="contact-grid">
@@ -470,7 +486,7 @@
         <!-- Contact Form Side -->
         <div class="contact-form-side glass-card">
           <h3>Formulaire de Contact Direct</h3>
-          
+
           <div class="alert-success" *ngIf="formSubmitted()">
             <i class="fa-solid fa-circle-check"></i>
             <span>Message envoyé avec succès ! Alioune Badara Sock vous répondra dans les plus brefs délais.</span>
@@ -479,22 +495,26 @@
           <form (ngSubmit)="submitContact()" #cForm="ngForm">
             <div class="form-group">
               <label for="cName">Nom complet *</label>
-              <input type="text" id="cName" name="name" [(ngModel)]="contactData.name" required placeholder="Votre nom et prénom" class="form-input">
+              <input type="text" id="cName" name="name" [(ngModel)]="contactData.name" required
+                placeholder="Votre nom et prénom" class="form-input">
             </div>
 
             <div class="form-group">
               <label for="cEmail">Adresse Email *</label>
-              <input type="email" id="cEmail" name="email" [(ngModel)]="contactData.email" required placeholder="votre.email@exemple.com" class="form-input">
+              <input type="email" id="cEmail" name="email" [(ngModel)]="contactData.email" required
+                placeholder="votre.email@exemple.com" class="form-input">
             </div>
 
             <div class="form-group">
               <label for="cSubject">Sujet du message</label>
-              <input type="text" id="cSubject" name="subject" [(ngModel)]="contactData.subject" placeholder="Ex: Projet Angular / Spring Boot" class="form-input">
+              <input type="text" id="cSubject" name="subject" [(ngModel)]="contactData.subject"
+                placeholder="Ex: Projet Angular / Spring Boot" class="form-input">
             </div>
 
             <div class="form-group">
               <label for="cMessage">Votre Message *</label>
-              <textarea id="cMessage" name="message" [(ngModel)]="contactData.message" required rows="5" placeholder="Décrivez votre besoin ou opportunité..." class="form-input"></textarea>
+              <textarea id="cMessage" name="message" [(ngModel)]="contactData.message" required rows="5"
+                placeholder="Décrivez votre besoin ou opportunité..." class="form-input"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary w-100" [disabled]="!cForm.form.valid || formSending()">
