@@ -84,7 +84,7 @@ export class AppComponent {
     {
       id: 'bcs-med',
       role: 'Développeur Java / Angular',
-      company: 'Business Center Services',
+      company: 'Business Center Services (BCS)',
       location: 'Dakar, Sénégal',
       period: 'Depuis Avril 2023',
       isCurrent: true,
@@ -100,9 +100,24 @@ export class AppComponent {
       techStack: ['Spring Boot', 'Angular', 'PostgreSQL', 'Docker', 'Git', 'Jenkins', 'GitLab CI/CD', 'Microservices', 'JWT']
     },
     {
+      id: 'bcs-it-lead',
+      role: 'Responsable IT & Support Technique',
+      company: 'Business Center Services (BCS)',
+      location: 'Dakar, Sénégal',
+      period: '2022 – 2024',
+      projectTitle: 'Gestion du Support Technique & Infrastructure IT',
+      description: [
+        'Supervision et gestion intégrale du support technique et des services informatiques de l’entreprise.',
+        'Administration, maintenance et sécurisation du parc informatique et des équipements réseaux.',
+        'Assistance aux utilisateurs, diagnostic rapide et résolution des incidents techniques.',
+        'Mise en place de procédures de maintenance préventive et optimisation continue de l’infrastructure IT.'
+      ],
+      techStack: ['Support Technique', 'Administration IT', 'Réseaux & Systèmes', 'Gestion d\'Incidents', 'Maintenance Hardware & Software']
+    },
+    {
       id: 'bcs-crm',
       role: 'Développeur Full Stack',
-      company: 'Business Center Services',
+      company: 'Business Center Services (BCS)',
       location: 'Dakar, Sénégal',
       period: 'Août 2021 – 2022',
       projectTitle: 'CRM Laravel pour la Gestion des Appels et Qualification des Employés',
